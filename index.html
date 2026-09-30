@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VELORA — Onlayn Banking</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <span>✦</span>
+            </div>
+
+            <div class="logo-text">
+                <h2>VELORA</h2>
+                <small>ONLAYN BANKING</small>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <p class="nav-title">ASOSIY MENYU</p>
+
+            <a href="#" class="nav-item active">
+                <span class="nav-icon">⌂</span>
+                <span>Boshqaruv paneli</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◈</span>
+                <span>Tranzaksiyalar</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">▣</span>
+                <span>Kartalar</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">↗</span>
+                <span>O‘tkazmalar</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◷</span>
+                <span>To‘lovlar</span>
+            </a>
+
+
+            <p class="nav-title second-title">BOSHQARUV</p>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">◎</span>
+                <span>Moliyaviy tahlil</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="nav-icon">⚙</span>
+                <span>Sozlamalar</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="help-card">
+
+                <div class="help-icon">?</div>
+
+                <div>
+                    <strong>Yordam kerakmi?</strong>
+                    <p>Qo‘llab-quvvatlash xizmati</p>
+                </div>
+
+                <button>→</button>
+
+            </div>
+
+
+            <div class="user-mini">
+
+                <div class="avatar">JA</div>
+
+                <div class="user-info">
+                    <strong>Jadra</strong>
+                    <span>Premium hisob</span>
+                </div>
+
+                <button class="more-btn">•••</button>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main-content">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div>
+
+                <p class="welcome">
+                    Xayrli tong, Jadra 👋
+                </p>
+
+                <h1>
+                    Moliyaviy ko‘rinish
+                </h1>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="search-button">
+
+                    <span>⌕</span>
+
+                    <span>Qidirish</span>
+
+                    <kbd>Ctrl K</kbd>
+
+                </button>
+
+
+                <button class="icon-button notification">
+
+                    ♢
+
+                    <span class="notification-dot"></span>
+
+                </button>
+
+
+                <div class="top-avatar">
+                    JA
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= STATISTICS ================= -->
+
+        <section class="stats-grid">
+
+
+            <div class="stat-card balance-card">
+
+                <div class="stat-header">
+
+                    <span>Umumiy balans</span>
+
+                    <button class="dots">
+                        •••
+                    </button>
+
+                </div>
+
+
+                <div class="balance-value">
+                    24 892<span>.50</span> $
+                </div>
+
+
+                <div class="balance-footer">
+
+                    <span class="positive">
+                        ↗ 12.8%
+                    </span>
+
+                    <span>
+                        o‘tgan oyga nisbatan
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-header">
+
+                    <span>Daromad</span>
+
+                    <div class="stat-symbol income-symbol">
+                        ↗
+                    </div>
+
+                </div>
+
+
+                <div class="stat-value">
+                    8 450<span>.00</span> $
+                </div>
+
+
+                <div class="stat-footer">
+
+                    <span class="positive">
+                        +8.4%
+                    </span>
+
+                    <span>
+                        shu oy
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-header">
+
+                    <span>Xarajatlar</span>
+
+                    <div class="stat-symbol expense-symbol">
+                        ↘
+                    </div>
+
+                </div>
+
+
+                <div class="stat-value">
+                    3 284<span>.25</span> $
+                </div>
+
+
+                <div class="stat-footer">
+
+                    <span class="negative">
+                        -4.2%
+                    </span>
+
+                    <span>
+                        shu oy
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-header">
+
+                    <span>Jamg‘arma</span>
+
+                    <div class="stat-symbol savings-symbol">
+                        ◇
+                    </div>
+
+                </div>
+
+
+                <div class="stat-value">
+                    12 620<span>.80</span> $
+                </div>
+
+
+                <div class="stat-footer">
+
+                    <span class="positive">
+                        +15.6%
+                    </span>
+
+                    <span>
+                        shu oy
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CHART + TRANSFER ================= -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- CHART -->
+
+            <div class="panel spending-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-label">
+                            MOLIYAVIY FAOLLIK
+                        </p>
+
+                        <h2>
+                            Daromad va xarajatlar
+                        </h2>
+
+                    </div>
+
+
+                    <select id="periodSelect">
+
+                        <option value="6">
+                            Oxirgi 6 oy
+                        </option>
+
+                        <option value="12">
+                            Oxirgi 12 oy
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="chart-container">
+
+                    <canvas id="financeChart"></canvas>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK TRANSFER -->
+
+            <div class="panel transfer-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-label">
+                            TEZKOR AMAL
+                        </p>
+
+                        <h2>
+                            Tezkor o‘tkazma
+                        </h2>
+
+                    </div>
+
+
+                    <button class="round-button">
+                        +
+                    </button>
+
+                </div>
+
+
+                <div class="recipients">
+
+
+                    <div class="recipient add-recipient">
+
+                        <div class="recipient-icon">
+                            +
+                        </div>
+
+                        <span>
+                            Qo‘shish
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipient">
+
+                        <div class="recipient-avatar avatar-one">
+                            AM
+                        </div>
+
+                        <span>
+                            Amelia
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipient">
+
+                        <div class="recipient-avatar avatar-two">
+                            JD
+                        </div>
+
+                        <span>
+                            Jamshid
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipient">
+
+                        <div class="recipient-avatar avatar-three">
+                            SO
+                        </div>
+
+                        <span>
+                            Sofiya
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipient">
+
+                        <div class="recipient-avatar avatar-four">
+                            MK
+                        </div>
+
+                        <span>
+                            Michael
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="transfer-input">
+
+                    <label>
+                        Miqdor
+                    </label>
+
+                    <div class="amount-box">
+
+                        <span>
+                            $
+                        </span>
+
+                        <input
+                            type="number"
+                            id="transferAmount"
+                            placeholder="0.00"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="transfer-btn"
+                    id="transferBtn"
+                >
+
+                    Pul yuborish
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BOTTOM ================= -->
+
+        <section class="bottom-grid">
+
+
+            <!-- CARD -->
+
+            <div class="panel cards-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-label">
+                            MENING KARTALARIM
+                        </p>
+
+                        <h2>
+                            Kartalar
+                        </h2>
+
+                    </div>
+
+
+                    <button class="text-button">
+                        Barchasini ko‘rish →
+                    </button>
+
+                </div>
+
+
+                <div class="bank-card">
+
+                    <div class="card-top">
+
+                        <span class="card-brand">
+                            VELORA
+                        </span>
+
+                        <span class="contactless">
+                            )))
+                        </span>
+
+                    </div>
+
+
+                    <div class="chip"></div>
+
+
+                    <div class="card-number">
+                        •••• &nbsp; •••• &nbsp; 7824
+                    </div>
+
+
+                    <div class="card-bottom">
+
+                        <div>
+
+                            <small>
+                                KARTA EGASI
+                            </small>
+
+                            <strong>
+                                JADRA M.
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                AMAL QILISH MUDDATI
+                            </small>
+
+                            <strong>
+                                09/29
+                            </strong>
+
+                        </div>
+
+
+                        <strong class="visa">
+                            VISA
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="card-balance-row">
+
+                    <div>
+
+                        <span>
+                            Mavjud balans
+                        </span>
+
+                        <strong>
+                            $8 420.25
+                        </strong>
+
+                    </div>
+
+
+                    <span class="card-status">
+                        ● Faol
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRANSACTIONS -->
+
+            <div class="panel transactions-panel">
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="panel-label">
+                            SO‘NGGI FAOLLIK
+                        </p>
+
+                        <h2>
+                            Tranzaksiyalar
+                        </h2>
+
+                    </div>
+
+
+                    <button class="text-button">
+                        Barchasini ko‘rish →
+                    </button>
+
+                </div>
+
+
+                <div class="transaction-list">
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon netflix">
+                            N
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Netflix
+                            </strong>
+
+                            <span>
+                                Ko‘ngilochar • Bugun
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount expense">
+                            -$15.99
+                        </div>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon salary">
+                            ↗
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Oylik maosh
+                            </strong>
+
+                            <span>
+                                Daromad • Kecha
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount income">
+                            +$4 250.00
+                        </div>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon amazon">
+                            a
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Amazon
+                            </strong>
+
+                            <span>
+                                Xarid • 27-sentabr
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount expense">
+                            -$84.20
+                        </div>
+
+                    </div>
+
+
+                    <div class="transaction">
+
+                        <div class="transaction-icon transfer">
+                            ↗
+                        </div>
+
+                        <div class="transaction-info">
+
+                            <strong>
+                                Jamshiddan o‘tkazma
+                            </strong>
+
+                            <span>
+                                O‘tkazma • 26-sentabr
+                            </span>
+
+                        </div>
+
+                        <div class="transaction-amount income">
+                            +$250.00
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer>
+
+            <span>
+                © 2026 VELORA
+            </span>
+
+            <span>
+                Xavfsiz • Maxfiy • Ishonchli
+            </span>
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+
+    <div class="toast-icon">
+        ✓
+    </div>
+
+    <div>
+
+        <strong>
+            O‘tkazma muvaffaqiyatli bajarildi
+        </strong>
+
+        <span>
+            Mablag‘ yuborildi.
+        </span>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
